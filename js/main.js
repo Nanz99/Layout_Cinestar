@@ -24,17 +24,21 @@ $(document).ready(function () {
             }
          },
          {
-            breakpoint: 600,
+            breakpoint: 800,
             settings: {
                slidesToShow: 2,
-               slidesToScroll: 2
+               slidesToScroll: 2,
+               infinite: true,
+               dots: true
             }
          },
          {
             breakpoint: 480,
             settings: {
                slidesToShow: 1,
-               slidesToScroll: 1
+               slidesToScroll: 1,
+               infinite: true,
+               dots: true
             }
          }
 
@@ -49,16 +53,21 @@ $(document).ready(function () {
 
       responsive: [
          {
-            breakpoint: 1024,
+            breakpoint: 1200,
             settings: {
-               slidesToShow: 3,
-               slidesToScroll: 3,
-               infinite: true,
-               dots: true
+               slidesToShow: 4,
+               slidesToScroll: 4,
             }
          },
          {
-            breakpoint: 600,
+            breakpoint: 900,
+            settings: {
+               slidesToShow: 3,
+               slidesToScroll: 3
+            }
+         },
+         {
+            breakpoint: 776,
             settings: {
                slidesToShow: 2,
                slidesToScroll: 2
@@ -97,3 +106,18 @@ backToTop.addEventListener("click", () => {
 document.querySelector('.btn-bars').addEventListener("click",() => {
    document.querySelector('.header__content').classList.toggle("active");
 });
+
+const stickyHeader = document.getElementById("sticky-header");
+const language = document.querySelector('.language');
+console.log(stickyHeader);
+window.addEventListener("scroll", () => {
+   if (window.pageYOffset > 20) {
+      stickyHeader.classList.add("sticky-header");
+
+   }
+   else {
+      setTimeout(() => {
+         stickyHeader.classList.remove("sticky-header");
+      }, 300);
+   }
+})

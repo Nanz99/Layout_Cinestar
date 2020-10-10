@@ -6,7 +6,7 @@
       justify-content: space-between;
       align-items: center;
       width: 90%;
-      margin: 0 auto;
+      margin: 5px auto;
       max-width: 1200px;
       z-index: 19;
       ul{
@@ -19,7 +19,6 @@
                span{
                   font-size: 16px;
                   text-transform: uppercase;
-                  color: $color-white-0;
                   padding-left: 7px;color: $color-pink-1;
                }
             }
@@ -28,9 +27,14 @@
       a.hotline{
          display: flex;
          align-items: center;
+        
+         img{
+            width: 20%;
+            display: block;
+         }
          span{
             padding-left: 8px;
-            font-size: 30px;
+            font-size: 28px;
             font-weight: 700;
             color: $color-orrange-0;
          }
@@ -38,35 +42,42 @@
    }
 }
 
-@media screen and (max-width: 840px){
+
+
+@include reponsive('large'){
    .register{
       .register__content{
-        
+         justify-content: center;
          ul{
             li{
+               margin: 0 25px 0 0;
                a{
                   span{
-                     font-size: 13px;
+                     font-size: 14px;
                   }
                }
             }
          }
          a.hotline{
-            span{
-               font-size: 20px;
-            }
+           span{
+              font-size: 25px;
+           }
          }
       }
    }
 }
-@media screen and (max-width: 680px){
+@include reponsive('medium'){
    .register{
       .register__content{
-         display: block;
-         text-align: center;
+         justify-content: center;
          ul{
             li{
+               margin: 0;
                a{
+                  img{
+                     width: 20%;
+                     display: block;
+                  }
                   span{
                      font-size: 12px;
                   }
@@ -74,12 +85,35 @@
             }
          }
          a.hotline{
-            display: flex;
-            justify-content: center;
             span{
-               font-size: 16px;
+               font-size: 18px;;
             }
          }
       }
    }
 }
+@include reponsive('small'){
+   .register{
+      .register__content{
+         display: inline-block;
+         text-align: center;
+         width: 100%;
+         ul{
+            li{
+               margin: 0;
+               a{
+                  img{
+                     width: 20%;
+                     display: block;
+                  }
+               }
+            }
+         }
+         a.hotline{
+            display: inline-flex;
+            justify-content: center;
+         }
+      }
+   }
+}
+

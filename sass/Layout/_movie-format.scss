@@ -1,9 +1,45 @@
 .movie-format{
+   position: relative;
    .movie-format__content{
       display: flex;
       justify-content: center;
       align-items: center;
       padding:40px 0 ;
+      picture{
+         margin: 0 10px;
+         img{
+            display: block;
+            width: 100%;
+
+         }
+      }
       
+   }
+}
+@include reponsive('small'){
+   .movie-format{
+
+      .movie-format__content{
+         
+         picture{
+            &:nth-child(1){
+               width: 120px;
+               height: auto;
+            }
+            &:nth-child(2){
+               width: 120px;
+               height: auto;
+            }
+            &:nth-child(3){
+               width: 40px;
+               height: auto;
+            }
+            &:nth-child(4){
+               width: 40px;
+               height: auto;
+            }
+         }
+         
+      }
    }
 }

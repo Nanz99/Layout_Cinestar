@@ -18,16 +18,16 @@
 
 
 
-// @mixin reponsive($screen) {
-//     @if map-has-key($map:$breakpoints, $key:$screen) {
-//         $value: map-get($map:$breakpoints, $key:$screen);
+@mixin reponsive($screen) {
+    @if map-has-key($map:$breakpoints, $key:$screen) {
+        $value: map-get($map:$breakpoints, $key:$screen);
 
-//         @media screen and (max-width:$value) {
-//             @content;
-//         }
-//     }
+        @media screen and (max-width:$value) {
+            @content;
+        }
+    }
 
-//     @else {
-//         @warn "Nhap lai di";
-//     }
-// }
+    @else {
+        @warn "Nhap lai di";
+    }
+}

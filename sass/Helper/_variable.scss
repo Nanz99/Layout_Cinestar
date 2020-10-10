@@ -6,6 +6,7 @@ $color-white-0: #ffffff;
 $color-black-0: #000000;
 
 $color-gray-0: #919191;
+$color-gray-1: #b3c4d5;
 
 
 $color-pink-0: #ba3469;
@@ -64,8 +65,10 @@ $fw-bold: bold;
 
 
 //break points
-$breakpoints:('extra-large': 1200px,
+$breakpoints:(
+    'extra-large': 1200px,
     'large' : 992px,
     'medium' : 768px,
     'small' : 576px,
+
 )

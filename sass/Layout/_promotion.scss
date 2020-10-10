@@ -1,14 +1,16 @@
 .promotion {
    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 40px 0;
+   width: 100%;
+   height: auto;
+   padding: 40px 0;
+
    .promotion__wrap {
       display: block;
       width: 90%;
       max-width: 1200px;
       margin: 0 auto;
       position: relative;
+
       .promotion__title {
          display: inline-block;
          width: 96px;
@@ -45,8 +47,8 @@
             height: auto;
             max-width: 364px;
             margin: 0 5px;
-            background: rgba(255,255,255,0.2);
-            box-shadow: 7px 7px 0 rgba(0,0,0,0.2);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.2);
             border-radius: 30px 0 30px 0;
             padding: 5px;
             transition: all 0.3s ease-in-out;
@@ -71,24 +73,28 @@
                }
             }
          }
-         .slick-dots{
+
+         .slick-dots {
             bottom: -35px;
-            li{
-               button{
+
+            li {
+               button {
                   display: inline-block;
-                  height:12px;
+                  height: 12px;
                   width: 12px;
                   line-height: 16px;
                   background-color: $color-white-0;
                   padding: 5px;
                   border-radius: 50%;
-                  &:before{
+
+                  &:before {
                      color: $color-white-0;
                   }
                }
-   
+
             }
-            li.slick-active{
+
+            li.slick-active {
                height: 22px;
                width: 22px;
                line-height: 22px;
@@ -96,8 +102,36 @@
                border-radius: 50%;
             }
          }
-         button.slick-arrow{
+
+         button.slick-arrow {
             display: none !important;
+         }
+      }
+   }
+}
+
+@include reponsive('large') {
+   .promotion {
+      .promotion__wrap {
+         .promotion__title {
+            position: relative;
+            width: 80px;
+            background-size: contain;
+            height: 80px;
+            top: 0;
+            bottom: auto;
+            margin-bottom: 20px;
+
+            h2 {
+               font-size: 20px;
+               top: 55px;
+               left: 82px;
+               transform: rotate(0);
+            }
+         }
+         .promotion__content{
+            margin-left: 0;
+            width: 100%;
          }
       }
    }

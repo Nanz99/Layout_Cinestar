@@ -1,9 +1,11 @@
 .news {
    position: relative;
    margin-bottom: 145px;
-   &::after{
+
+   &::after {
       clear: both;
    }
+
    .news__wrap {
       display: block;
       width: 90%;
@@ -25,7 +27,7 @@
             font-weight: normal;
             font-size: 28px;
             text-transform: uppercase;
-            color:$color-white-0;
+            color: $color-white-0;
             transform: rotate(270deg);
             position: relative;
             left: 30px;
@@ -44,6 +46,7 @@
             height: 186px;
             overflow: hidden;
             padding: 18px;
+
             .news__img {
                float: right;
                width: auto;
@@ -51,8 +54,9 @@
                max-width: 270px;
                overflow: hidden;
                margin-left: 20px;
-               background:$color-white-0;
+               background: $color-white-0;
                border: 3px solid $color-white-0;
+
                img {
                   height: 146px;
                   width: auto;
@@ -64,17 +68,19 @@
                max-height: 130px;
                overflow: hidden;
                text-align: right;
-               h3{
-                  color:$color-white-0;
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 10px;
+
+               h3 {
+                  color: $color-white-0;
+                  font-size: 15px;
+                  font-weight: bold;
+                  margin-bottom: 10px;
                }
-               p{
+
+               p {
                   font-size: 13px;
                   font-weight: normal;
-                  color:$color-white-0;
-                  line-height: 23px;   
+                  color: $color-white-0;
+                  line-height: 23px;
                }
             }
          }
@@ -82,10 +88,12 @@
          .bg-news-pink {
             background-color: $color-pink-1;
             border-radius: 0 30px 0 30px;
+
             .news__img {
                border-radius: 0 30px 0 0;
             }
-            &:hover{
+
+            &:hover {
                background-color: $color-orrange-0;
             }
          }
@@ -93,11 +101,114 @@
          .bg-news-orange {
             background-color: $color-orrange-0;
             border-radius: 30px 0 30px 0;
+
             .news__img {
                border-radius: 0 0 30px 0;
             }
-            &:hover{
+
+            &:hover {
                background-color: $color-pink-1;
+            }
+         }
+      }
+   }
+}
+
+@include reponsive('large') {
+   .news {
+      .news__wrap {
+         .news__title {
+            display: block;
+            position: relative;
+            width: 80px;
+            background-size: contain;
+            height: 80px;
+            top: 0;
+            bottom: auto;
+
+            h2 {
+               font-size: 20px;
+               top: 47px;
+               left: 82px;
+               transform: rotate(0);
+            }
+         }
+
+         .news__content {
+            margin-left: 0;
+
+            .news__item {
+               height: auto;
+
+               .news__img {
+                  float: none;
+                  width: 100%;
+                  height: auto;
+                  overflow: hidden;
+                  margin: 0;
+                  margin-bottom: 7px;
+                  max-width: inherit;
+                  img {
+                     width: 100%;
+                     height: auto;
+                     display: block;
+                  }
+               }
+
+               
+            }
+         }
+      }
+   }
+}
+
+@include reponsive('small') {
+   .news {
+      .news__wrap {
+         .news__title {
+            display: block;
+            position: relative;
+            width: 80px;
+            background-size: contain;
+            height: 80px;
+            top: 0;
+            bottom: auto;
+
+            h2 {
+               font-size: 20px;
+               top: 47px;
+               left: 82px;
+               transform: rotate(0);
+            }
+         }
+
+         .news__content {
+            margin-left: 0;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            .news__item {
+               height: auto;
+
+               .news__img {
+                  float: none;
+                  width: 100%;
+                  height: auto;
+                  overflow: hidden;
+                  margin: 0;
+                  margin-bottom: 7px;
+                  max-width: inherit;
+                  img {
+                     width: 100%;
+                     height: auto;
+                     display: block;
+                  }
+               }
+
+               .news__text {
+                  p{
+                     display: none;
+                  }
+               }
             }
          }
       }

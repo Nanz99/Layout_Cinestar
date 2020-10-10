@@ -1,4 +1,6 @@
 footer {
+   position: relative;
+
    .payment {
       position: relative;
       width: 100%;
@@ -27,16 +29,19 @@ footer {
       width: 100%;
       height: auto;
       padding: 24px 20px;
-      background:$color-black-0;
-      a{
+      background: $color-black-0;
+
+      a {
          display: flex;
          justify-content: center;
-         img{
+
+         img {
             width: 150px;
             display: block;
          }
       }
-      p{
+
+      p {
          font-size: 12px;
          text-transform: uppercase;
          color: $color-gray-0;
@@ -47,23 +52,32 @@ footer {
 }
 
 
-.backToTop{
+.backToTop {
    background: url(../../img/top.png) no-repeat center center;
-    width: 61px;
-    height: 61px;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    opacity: 0;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color:$color-pink-1;
-    transition: all 0.3s ease-in-out;
-    z-index: 18;
-    pointer-events: none;
-    transition: all 0.3s ease;
+   width: 60px;
+   height: 60px;
+   position: fixed;
+   bottom: 30px;
+   right: 20px;
+   opacity: 0;
+   cursor: pointer;
+   border-radius: 50%;
+   background-color: $color-pink-1;
+   transition: all 0.3s ease-in-out;
+   z-index: 18;
+   pointer-events: none;
+   transition: all 0.3s ease;
 }
-.backToTop-active{
+
+.backToTop-active {
    opacity: 1;
    pointer-events: auto;
+}
+
+@include reponsive('medium') {
+   .backToTop {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+   }
 }
