@@ -1,0 +1,25 @@
+@import "./Helper/variable";
+// Base
+@import "./Base/reset";
+
+
+// Helper
+
+@import "./Helper/mixin";
+
+
+// Layout
+@import "./Layout/header";
+@import "./Layout/container";
+@import "./Layout//register";
+@import "./Layout/cart";
+@import "./Layout/movie-format";
+@import "./Layout/slider";
+@import "./Layout/content-page";
+@import "./Layout/movie";
+@import "./Layout/promotion";
+@import "./Layout/news";
+@import "./Layout/contact";
+@import "./Layout/footer";
+// Component
+@import "./Components/button";

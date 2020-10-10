@@ -1,0 +1,105 @@
+.news {
+   position: relative;
+   margin-bottom: 145px;
+   &::after{
+      clear: both;
+   }
+   .news__wrap {
+      display: block;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+
+      .news__title {
+         display: inline-block;
+         width: 96px;
+         height: 236px;
+         background: url(../../img/iocn-news.png) no-repeat left bottom;
+         vertical-align: top;
+         position: absolute;
+         left: 0;
+         bottom: 0px;
+
+         h2 {
+            font-weight: normal;
+            font-size: 28px;
+            text-transform: uppercase;
+            color:$color-white-0;
+            transform: rotate(270deg);
+            position: relative;
+            left: 30px;
+            top: 40px;
+            white-space: nowrap;
+         }
+      }
+
+      .news__content {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         margin-left: 116px;
+         grid-gap: 5px;
+
+         .news__item {
+            height: 186px;
+            overflow: hidden;
+            padding: 18px;
+            .news__img {
+               float: right;
+               width: auto;
+               height: 150px;
+               max-width: 270px;
+               overflow: hidden;
+               margin-left: 20px;
+               background:$color-white-0;
+               border: 3px solid $color-white-0;
+               img {
+                  height: 146px;
+                  width: auto;
+                  display: block;
+               }
+            }
+
+            .news__text {
+               max-height: 130px;
+               overflow: hidden;
+               text-align: right;
+               h3{
+                  color:$color-white-0;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+               }
+               p{
+                  font-size: 13px;
+                  font-weight: normal;
+                  color:$color-white-0;
+                  line-height: 23px;   
+               }
+            }
+         }
+
+         .bg-news-pink {
+            background-color: $color-pink-1;
+            border-radius: 0 30px 0 30px;
+            .news__img {
+               border-radius: 0 30px 0 0;
+            }
+            &:hover{
+               background-color: $color-orrange-0;
+            }
+         }
+
+         .bg-news-orange {
+            background-color: $color-orrange-0;
+            border-radius: 30px 0 30px 0;
+            .news__img {
+               border-radius: 0 0 30px 0;
+            }
+            &:hover{
+               background-color: $color-pink-1;
+            }
+         }
+      }
+   }
+}

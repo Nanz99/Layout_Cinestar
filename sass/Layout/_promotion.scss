@@ -1,0 +1,104 @@
+.promotion {
+   position: relative;
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+   .promotion__wrap {
+      display: block;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      .promotion__title {
+         display: inline-block;
+         width: 96px;
+         height: 200px;
+         background: url(../../img/icon-promotion.png) no-repeat left bottom;
+         vertical-align: top;
+         position: absolute;
+         left: 0;
+         bottom: 25px;
+
+         h2 {
+            font-weight: normal;
+            font-size: 28px;
+            text-transform: uppercase;
+            color: $color-white-0;
+            transform: rotate(270deg);
+            position: relative;
+            left: 30px;
+            top: 40px;
+            white-space: nowrap;
+         }
+      }
+
+      .promotion__content {
+         width: 1084px;
+         margin-left: 116px;
+         opacity: 1;
+         display: inline-block;
+
+         .promotion__item {
+            position: relative;
+            display: block;
+            width: 9%;
+            height: auto;
+            max-width: 364px;
+            margin: 0 5px;
+            background: rgba(255,255,255,0.2);
+            box-shadow: 7px 7px 0 rgba(0,0,0,0.2);
+            border-radius: 30px 0 30px 0;
+            padding: 5px;
+            transition: all 0.3s ease-in-out;
+
+            a {
+               .promotion__img {
+                  position: relative;
+                  width: 100%;
+                  height: auto;
+                  padding: 25px;
+                  background-color: $color-white-0;
+                  border-radius: 30px 0 30px 0;
+
+                  img {
+                     width: 100%;
+                     height: auto;
+                     display: block;
+                     max-height: 170px;
+                     border: 1px solid $color-black-0;
+                     transition: all 0.3s ease-in-out;
+                  }
+               }
+            }
+         }
+         .slick-dots{
+            bottom: -35px;
+            li{
+               button{
+                  display: inline-block;
+                  height:12px;
+                  width: 12px;
+                  line-height: 16px;
+                  background-color: $color-white-0;
+                  padding: 5px;
+                  border-radius: 50%;
+                  &:before{
+                     color: $color-white-0;
+                  }
+               }
+   
+            }
+            li.slick-active{
+               height: 22px;
+               width: 22px;
+               line-height: 22px;
+               border: 1px solid $color-white-0;
+               border-radius: 50%;
+            }
+         }
+         button.slick-arrow{
+            display: none !important;
+         }
+      }
+   }
+}

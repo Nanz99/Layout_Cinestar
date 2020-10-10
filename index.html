@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cinestar</title>
+   <link rel="shortcut icon" href="./img/favicon.ico" />
+   <!-- CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+   <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+   <!-- HEADER -->
+   <header>
+      <div class="header__content">
+         <a href="" class="logo"></a>
+         <a href="#" class="btn-bars"></a>
+         <div class="facilities-nav">
+            <div class="searchForm">
+               <div class="form-control">
+                  <input type="text" name="" id="" placeholder="Tìm kiếm ...">
+                  <a href="" class="search"></a>
+               </div>
+            </div>
+            <a href="" class="language">EN</a>
+         </div>
+
+         <div class="navigation">
+            <a href="#" class="icon-home"></a>
+            <nav>
+               <ul>
+                  <li><a href="#">PHIM</a></li>
+                  <li><a href="#">LỊCH CHIẾU</a></li>
+                  <li><a href="#">RẠP VÀ GIÁ</a></li>
+                  <li><a href="#">KHUYẾN MÃI</a></li>
+                  <li><a href="#">HỎI VÀ ĐÁP</a></li>
+                  <li><a href="#">TIN TỨC</a></li>
+                  <li><a href="#">GIỚI THIỆU</a></li>
+                  <li><a href="#">LIÊN HỆ</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header>
+   <div class="container">
+      <div class="container-bg">
+         <!-- REGISTER -->
+         <section class="register">
+            <div class="register__content">
+               <ul>
+                  <li><a href="#"><img src="./img/icon-register.png" alt=""><span>Đăng ký thành viên</span></a></li>
+                  <li><a href="#"><img src="./img/icon-login.png" alt=""><span>Đăng nhập</span></a></li>
+               </ul>
+               <a href="#" class="hotline"><img src="img/icon-call.png" alt=""><span>028 7300 8881</span></a>
+            </div>
+         </section>
+
+         <!-- SLIDER -->
+         <div class="slider">
+            <div class="slick-carousel" id="slider">
+               <div class="slide__item">
+                  <img src="./img/slider_1.jpg" alt="">
+               </div>
+               <div class="slide__item">
+                  <img src="./img/slider_2.jpg" alt="">
+               </div>
+               <div class="slide__item">
+                  <img src="./img/slider_3.jpg" alt="">
+               </div>
+               <div class="slide__item">
+                  <img src="./img/slider_4.jpg" alt="">
+               </div>
+               <div class="slide__item">
+                  <img src="./img/slider_5.jpg" alt="">
+               </div>
+            </div>
+         </div>
+         <!-- CART -->
+         <div class="cart">
+            <div class="cart__wrap">
+               <div class="cart__title">
+                  <h2>MUA VÉ <br>ONLINE</h2>
+               </div>
+               <div class="cart__content">
+                  <div class="cart__item">
+                     <div class="cart__header">
+                        <h3>CHỌN PHIM</h3>
+                        <span><i class="material-icons">keyboard_arrow_down</i></span>
+                     </div>
+                     <ul class="cart__selectList">
+                        
+                     </ul> 
+                  </div>
+                  <div class="cart__item">
+                     <div class="cart__header">
+                        <h3>CHỌN RẠP</h3>
+                        <span><i class="material-icons">keyboard_arrow_down</i></span>
+                     </div>
+                  </div>
+                  <div class="cart__item">
+                     <div class="cart__header">
+                        <h3>CHỌN NGÀY</h3>
+                        <span><i class="material-icons">keyboard_arrow_down</i></span>
+                     </div>
+                  </div>
+                  <div class="cart__item">
+                     <div class="cart__header">
+                        <h3>CHỌN SUẤT CHIẾU</h3>
+                        <span><i class="material-icons">keyboard_arrow_down</i></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- MOVIE-FORMAT -->
+         <div class="movie-format">
+            <div class="movie-format__content">
+               <picture>
+                  <img src="img/dolby.png" alt="">
+               </picture>
+               <picture>
+                  <img src="img/crhistie.png" alt="">
+               </picture>
+               <picture>
+                  <img src="img/2d.png" alt="">
+               </picture>
+               <picture>
+                  <img src="img/3d.png" alt="">
+               </picture>
+            </div>
+         </div>
+         <!-- MOVIE -->
+        <div class="movie">
+         <div class="movie__title">
+            <h2>PHIM ĐANG CHIẾU</h2>
+         </div>
+           <div class="movie__wrap">
+              
+              <div class="movie__content slick-carousel" id="movie-carousel">
+                 <div class="movie__item">
+                    <div class="movie__img">
+                       <img src="img/tenet.jpg" alt="">
+                    </div>
+                    <div class="movie__text">
+                       <h3>The Cinestar</h3>
+                    </div>
+                    <div class="movie__overlay">
+                     <div class="movie-over">
+                        <a class="movie__detail" href="#">
+                            <p>Câu chuyện của Behind You xoay quanh hai đứa trẻ là Olivia (Addy Miller) và em gái Claire (Elizabeth Birkner). Sau cái chết đột ngột của người mẹ còn cha ở nước ngoài, cả hai buộc phải đến sống cùng dì Beth (Jan Bronberg). Tuy nhiên, Olivia dần nhận ra những biểu hiện và hành động kỳ quái của người dì. Từ đây, hàng loạt sự kiện kinh hoàng bắt đầu diễn ra khiến tính mạng của hai chị em đều gặp nguy hiểm.</p><span class="atc" style="display: block;">...</span>
+                            <span class="detail-link">Chi tiết</span>
+                        </a>
+                        <a class="btn--whiteOrange" href="#">Xem trailer</a>
+                        <a class="btn--whitePink" href="#">Mua vé</a>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="movie__item">
+                    <div class="movie__img">
+                       <img src="img/thenew.jpg" alt="">
+                    </div>
+                    <div class="movie__text">
+                       <h3>The Cinestar</h3>
+                    </div>
+                    <div class="movie__overlay">
+                     <div class="movie-over">
+                        <a class="movie__detail" href="#">
+                            <p>Câu chuyện của Behind You xoay quanh hai đứa trẻ là Olivia (Addy Miller) và em gái Claire (Elizabeth Birkner). Sau cái chết đột ngột của người mẹ còn cha ở nước ngoài, cả hai buộc phải đến sống cùng dì Beth (Jan Bronberg). Tuy nhiên, Olivia dần nhận ra những biểu hiện và hành động kỳ quái của người dì. Từ đây, hàng loạt sự kiện kinh hoàng bắt đầu diễn ra khiến tính mạng của hai chị em đều gặp nguy hiểm.</p><span class="atc" style="display: block;">...</span>
+                            <span class="detail-link">Chi tiết</span>
+                        </a>
+                        <a class="btn--whiteOrange" href="#">Xem trailer</a>
+                        <a class="btn--whitePink" href="#">Mua vé</a>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="movie__item">
+                    <div class="movie__img">
+                       <img src="img//aqdd.jpg" alt="">
+                    </div>
+                    <div class="movie__text">
+                       <h3>The Cinestar</h3>
+                    </div>
+                    <div class="movie__overlay">
+                     <div class="movie-over">
+                        <a class="movie__detail" href="#">
+                            <p>Câu chuyện của Behind You xoay quanh hai đứa trẻ là Olivia (Addy Miller) và em gái Claire (Elizabeth Birkner). Sau cái chết đột ngột của người mẹ còn cha ở nước ngoài, cả hai buộc phải đến sống cùng dì Beth (Jan Bronberg). Tuy nhiên, Olivia dần nhận ra những biểu hiện và hành động kỳ quái của người dì. Từ đây, hàng loạt sự kiện kinh hoàng bắt đầu diễn ra khiến tính mạng của hai chị em đều gặp nguy hiểm.</p><span class="atc" style="display: block;">...</span>
+                            <span class="detail-link">Chi tiết</span>
+                        </a>
+                        <a class="btn--whiteOrange" href="#">Xem trailer</a>
+                        <a class="btn--whitePink" href="#">Mua vé</a>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="movie__item">
+                    <div class="movie__img">
+                       <img src="img/notn.jpg" alt="">
+                    </div>
+                    <div class="movie__text">
+                       <h3>The Cinestar</h3>
+                    </div>
+                    <div class="movie__overlay">
+                     <div class="movie-over">
+                        <a class="movie__detail" href="#">
+                            <p>Câu chuyện của Behind You xoay quanh hai đứa trẻ là Olivia (Addy Miller) và em gái Claire (Elizabeth Birkner). Sau cái chết đột ngột của người mẹ còn cha ở nước ngoài, cả hai buộc phải đến sống cùng dì Beth (Jan Bronberg). Tuy nhiên, Olivia dần nhận ra những biểu hiện và hành động kỳ quái của người dì. Từ đây, hàng loạt sự kiện kinh hoàng bắt đầu diễn ra khiến tính mạng của hai chị em đều gặp nguy hiểm.</p><span class="atc" style="display: block;">...</span>
+                            <span class="detail-link">Chi tiết</span>
+                        </a>
+                        <a class="btn--whiteOrange" href="#">Xem trailer</a>
+                        <a class="btn--whitePink" href="#">Mua vé</a>
+                    </div>
+                    </div>
+                 </div>
+                 <div  class="movie__item">
+                    <div class="movie__img">
+                       <img src="img/hamquy.jpg" alt="">
+                    </div>
+                    <div class="movie__text">
+                       <h3>The Cinestar</h3>
+                    </div>
+                    <div class="movie__overlay">
+                     <div class="movie-over">
+                        <a class="movie__detail" href="#">
+                            <p>Câu chuyện của Behind You xoay quanh hai đứa trẻ là Olivia (Addy Miller) và em gái Claire (Elizabeth Birkner). Sau cái chết đột ngột của người mẹ còn cha ở nước ngoài, cả hai buộc phải đến sống cùng dì Beth (Jan Bronberg). Tuy nhiên, Olivia dần nhận ra những biểu hiện và hành động kỳ quái của người dì. Từ đây, hàng loạt sự kiện kinh hoàng bắt đầu diễn ra khiến tính mạng của hai chị em đều gặp nguy hiểm.</p><span class="atc" style="display: block;">...</span>
+                            <span class="detail-link">Chi tiết</span>
+                        </a>
+                        <a class="btn--whiteOrange" href="#">Xem trailer</a>
+                        <a class="btn--whitePink" href="#">Mua vé</a>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="movie__item">
+                    <div class="movie__img">
+                       <img src="img/movie_6.jpeg" alt="">
+                    </div>
+                    <div class="movie__text">
+                       <h3>The Cinestar</h3>
+                    </div>
+                    <div class="movie__overlay">
+                     <div class="movie-over">
+                        <a class="movie__detail" href="#">
+                            <p>Câu chuyện của Behind You xoay quanh hai đứa trẻ là Olivia (Addy Miller) và em gái Claire (Elizabeth Birkner). Sau cái chết đột ngột của người mẹ còn cha ở nước ngoài, cả hai buộc phải đến sống cùng dì Beth (Jan Bronberg). Tuy nhiên, Olivia dần nhận ra những biểu hiện và hành động kỳ quái của người dì. Từ đây, hàng loạt sự kiện kinh hoàng bắt đầu diễn ra khiến tính mạng của hai chị em đều gặp nguy hiểm.</p><span class="atc" style="display: block;">...</span>
+                            <span class="detail-link">Chi tiết</span>
+                        </a>
+                        <a class="btn--whiteOrange" href="#">Xem trailer</a>
+                        <a class="btn--whitePink" href="#">Mua vé</a>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="movie__item">
+                    <div class="movie__img">
+                       <img src="img/movie_7.jpg" alt="">
+                    </div>
+                    <div class="movie__text">
+                       <h3>The Cinestar</h3>
+                    </div>
+                    <div class="movie__overlay">
+                     <div class="movie-over">
+                        <a class="movie__detail" href="#">
+                            <p>Câu chuyện của Behind You xoay quanh hai đứa trẻ là Olivia (Addy Miller) và em gái Claire (Elizabeth Birkner). Sau cái chết đột ngột của người mẹ còn cha ở nước ngoài, cả hai buộc phải đến sống cùng dì Beth (Jan Bronberg). Tuy nhiên, Olivia dần nhận ra những biểu hiện và hành động kỳ quái của người dì. Từ đây, hàng loạt sự kiện kinh hoàng bắt đầu diễn ra khiến tính mạng của hai chị em đều gặp nguy hiểm.</p><span class="atc" style="display: block;">...</span>
+                            <span class="detail-link">Chi tiết</span>
+                        </a>
+                        <a class="btn--whiteOrange" href="#">Xem trailer</a>
+                        <a class="btn--whitePink" href="#">Mua vé</a>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="movie__item">
+                    <div class="movie__img">
+                       <img src="img/movie_8.jpg" alt="">
+                    </div>
+                    <div class="movie__text">
+                       <h3>The Cinestar</h3>
+                    </div>
+                    <div class="movie__overlay">
+                     <div class="movie-over">
+                        <a class="movie__detail" href="#">
+                            <p>Câu chuyện của Behind You xoay quanh hai đứa trẻ là Olivia (Addy Miller) và em gái Claire (Elizabeth Birkner). Sau cái chết đột ngột của người mẹ còn cha ở nước ngoài, cả hai buộc phải đến sống cùng dì Beth (Jan Bronberg). Tuy nhiên, Olivia dần nhận ra những biểu hiện và hành động kỳ quái của người dì. Từ đây, hàng loạt sự kiện kinh hoàng bắt đầu diễn ra khiến tính mạng của hai chị em đều gặp nguy hiểm.</p><span class="atc" style="display: block;">...</span>
+                            <span class="detail-link">Chi tiết</span>
+                        </a>
+                        <a class="btn--whiteOrange" href="#">Xem trailer</a>
+                        <a class="btn--whitePink" href="#">Mua vé</a>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="movie__item">
+                    <div class="movie__img">
+                       <img src="img/movie_9.jpg" alt="">
+                    </div>
+                    <div class="movie__text">
+                       <h3>The Cinestar</h3>
+                    </div>
+                    <div class="movie__overlay">
+                     <div class="movie-over">
+                        <a class="movie__detail" href="#">
+                            <p>Câu chuyện của Behind You xoay quanh hai đứa trẻ là Olivia (Addy Miller) và em gái Claire (Elizabeth Birkner). Sau cái chết đột ngột của người mẹ còn cha ở nước ngoài, cả hai buộc phải đến sống cùng dì Beth (Jan Bronberg). Tuy nhiên, Olivia dần nhận ra những biểu hiện và hành động kỳ quái của người dì. Từ đây, hàng loạt sự kiện kinh hoàng bắt đầu diễn ra khiến tính mạng của hai chị em đều gặp nguy hiểm.</p><span class="atc" style="display: block;">...</span>
+                            <span class="detail-link">Chi tiết</span>
+                        </a>
+                        <a class="btn--whiteOrange" href="#">Xem trailer</a>
+                        <a class="btn--whitePink" href="#">Mua vé</a>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="movie__item">
+                    <div class="movie__img">
+                       <img src="img/movie_10.jpg" alt="">
+                    </div>
+                    <div class="movie__text">
+                       <h3>The Cinestar</h3>
+                    </div>
+                    <div class="movie__overlay">
+                     <div class="movie-over">
+                        <a class="movie__detail" href="#">
+                            <p>Câu chuyện của Behind You xoay quanh hai đứa trẻ là Olivia (Addy Miller) và em gái Claire (Elizabeth Birkner). Sau cái chết đột ngột của người mẹ còn cha ở nước ngoài, cả hai buộc phải đến sống cùng dì Beth (Jan Bronberg). Tuy nhiên, Olivia dần nhận ra những biểu hiện và hành động kỳ quái của người dì. Từ đây, hàng loạt sự kiện kinh hoàng bắt đầu diễn ra khiến tính mạng của hai chị em đều gặp nguy hiểm.</p><span class="atc" style="display: block;">...</span>
+                            <span class="detail-link">Chi tiết</span>
+                        </a>
+                        <a class="btn--whiteOrange" href="#">Xem trailer</a>
+                        <a class="btn--whitePink" href="#">Mua vé</a>
+                    </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+         <!-- PROMOTION -->
+         <section class="promotion">
+            <div class="promotion__wrap">
+               <div class="promotion__title">
+                  <h2>ƯU ĐÃI</h2>
+               </div>
+               <div class="promotion__content slick-carousel" id="promotion-carousel">
+                  <div class="promotion__item">
+                     <a href="#">
+                        <div class="promotion__img">
+                           <img src="img/promotion_1.jpg" alt="">
+                        </div>
+                     </a>
+                  </div>
+                  <div class="promotion__item">
+                     <a href="#">
+                        <div class="promotion__img">
+                           <img src="img/promotion_2.jpg" alt="">
+                        </div>
+                     </a>
+                  </div>
+                  <div class="promotion__item">
+                     <a href="#">
+                        <div class="promotion__img">
+                           <img src="img/promotion_3.jpg" alt="">
+                        </div>
+                     </a>
+                  </div>
+                  <div class="promotion__item">
+                     <a href="#">
+                        <div class="promotion__img">
+                           <img src="img/promotion_4.jpg" alt="">
+                        </div>
+                     </a>
+                  </div>
+                  <div class="promotion__item">
+                     <a href="#">
+                        <div class="promotion__img">
+                           <img src="img/promotion_5.jpg" alt="">
+                        </div>
+                     </a>
+                  </div>
+                  <div class="promotion__item">
+                     <a href="#">
+                        <div class="promotion__img">
+                           <img src="img/promotion_6.jpg" alt="">
+                        </div>
+                     </a>
+                  </div>
+                  <div class="promotion__item">
+                     <a href="#">
+                        <div class="promotion__img">
+                           <img src="img/promotion_4.jpg" alt="">
+                        </div>
+                     </a>
+                  </div>
+                  <div class="promotion__item">
+                     <a href="#">
+                        <div class="promotion__img">
+                           <img src="img/promotion_5.jpg" alt="">
+                        </div>
+                     </a>
+                  </div>
+                  <div class="promotion__item">
+                     <a href="#">
+                        <div class="promotion__img">
+                           <img src="img/promotion_6.jpg" alt="">
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- NEWS -->
+         <div class="news">
+            <div class="news__wrap">
+               <div class="news__title">
+                  <h2>TIN TỨC</h2>
+               </div>
+               <div class="news__content">
+                  <div class="news__item bg-news-pink">
+                     <div class="news__img">
+                        <img src="img/news_1.jpg" alt="">
+                     </div>
+                     <div class="news__text">
+                        <h3>Tiệc Trăng Máu tung poster dàn diễn viên đình đám với nhiều biểu cảm đắt giá</h3>
+                        <p>Bộ phim Tiệc Trăng Máu của đạo diễn Nguyễn Quang Dũng vừa tung ra bộ poster giới thiệu dàn
+                           nhân vật với bối cảnh xoay quanh chiếc bàn tiệc thịnh soạn, bộ poster hé lộ những câu chuyện
+                           cực thị phi và hấp dẫn sẽ xuất hiện trong phim. Bên cạnh đó, biểu cảm xuất sắc của dàn diễn
+                           viên cũng là điểm đáng chú ý, thu hút khán giả.</p>
+                     </div>
+                  </div>
+                  <div class="news__item bg-news-orange">
+                     <div class="news__img">
+                        <img src="img/news_2.jpg" alt="">
+                     </div>
+                     <div class="news__text">
+                        <h3>Ròm và Phúc: Đối thủ trên màn ảnh, tình bạn đẹp ngoài đời thật</h3>
+                        <p>Không chỉ gây chú ý vì nhận được giải thưởng lớn ở quốc tế, RÒM còn thu hút khán giả qua
+                           những câu chuyện hậu trường thú vị. Nhà sản xuất vừa chia sẻ hành trình đi tìm diễn viên của
+                           bộ phim cùng câu chuyện về tình bạn đẹp của hai diễn viên trong vai Ròm và Phúc.</p>
+                     </div>
+                  </div>
+                  <div class="news__item bg-news-orange">
+                     <div class="news__img">
+                        <img src="img/news_3.jpg" alt="">
+                     </div>
+                     <div class="news__text">
+                        <h3>TUYỂN DỤNG NHÂN SỰ TẠI CINESTAR MỸ THO</h3>
+                        <p>Với mục tiêu xây dựng khối dịch vụ giải trí phức hợp gồm Rạp Chiếu phim- Nhà hàng- Trung tâm
+                           thể thao Bowling- Trò chơi chúng tôi liên tục tuyển dụng nhân viên cho các vị trí: </p>
+                     </div>
+                  </div>
+                  <div class="news__item bg-news-pink">
+                     <div class="news__img">
+                        <img src="img/news_4.jpg" alt="">
+                     </div>
+                     <div class="news__text">
+                        <h3>LIÊN HOAN PHIM ASEAN 2020</h3>
+                        <p>Tuần phim ASEAN 2020 được tổ chức nhằm kết nối các nền văn hóa của các quốc gia ASEAN,
+                           góp phần xây dựng cộng đồng ASEAN hòa bình, ổn định, năng động, gắn kết và
+                           thịnh vượng; giới thiệu các tác phẩm đặc sắc của các nền điện ảnh các quốc gia thành viên
+                           ASEAN.</p>
+                     </div>
+                  </div>
+                  <div class="news__item bg-news-pink">
+                     <div class="news__img">
+                        <img src="img/news_5.jpg" alt="">
+                     </div>
+                     <div class="news__text">
+                        <h3>CINESTAR HCM - TUYỂN NHÂN VIÊN KẾ TOÁN TỔNG HỢP</h3>
+                        <p>Cinestar Cinema - Hệ thống cụm rạp Việt Nam được đầu tư theo tiêu chuẩn chất lượng Âu Mỹ -
+                           đang tìm kiếm những ứng viên tài năng gia nhập vào công ty để không ngừng mở rộng và phát
+                           triển quy mô.</p>
+                     </div>
+                  </div>
+                  <div class="news__item bg-news-orange">
+                     <div class="news__img">
+                        <img src="img/news_6.jpg" alt="">
+                     </div>
+                     <div class="news__text">
+                        <h3>HCM- TUYỂN NHÂN SỰ THẨM ĐỊNH DỰ ÁN</h3>
+                        <p>Trong quá trình phát triển, chúng tôi luôn cần những người đồng hành để cùng nhau xây dựng
+                           thương hiệu cho người Việt Nam. Với vô vàn cơ hội đầu tư và phát triển mới chúng tôi cần
+                           những chuyên viên tư vấn để định hướng phát triển các dự án mới cho CINESTAR . Các thông tin
+                           chi tiết của vị trí nhân lực này xin xem tại đây.</p>
+                     </div>
+                  </div>
+                  <div class="news__item bg-news-orange">
+                     <div class="news__img">
+                        <img src="img/news_7.jpg" alt="">
+                     </div>
+                     <div class="news__text">
+                        <h3>CINESTAR HCM - TUYỂN NHÂN VIÊN PHỤC VỤ KHÁCH HÀNG </h3>
+                        <p>Cinestar chào đón những nhân viên trẻ trung, năng động, tài năng, ham học hỏi, nhiều hoài bão
+                           và mong muốn thể hiện tài năng gia nhập đội ngũ của chúng tôi. </p>
+                     </div>
+                  </div>
+                  <div class="news__item bg-news-pink">
+                     <div class="news__img">
+                        <img src="img/news_8.jpg" alt="">
+                     </div>
+                     <div class="news__text">
+                        <h3>TUYỂN DỤNG NHÂN VIÊN THIẾT KẾ - GRAPHIC DESIGNER</h3>
+                        <p>Tham gia đội ngũ Cinestar bạn sẽ đảm nhiệm những công việc liên quan đến phim ảnh : Thiết kế
+                           Poster, Banner liện quan đến phim ảnh, hình ảnh bên trong rạp. Được cập nhật thông tin phim
+                           chiếu rạp mới hàng tuần. </p>
+                     </div>
+                  </div>
+                  <div class="news__item bg-news-pink">
+                     <div class="news__img">
+                        <img src="img/news_9.png" alt="">
+                     </div>
+                     <div class="news__text">
+                        <h3>THÔNG TIN TUYỂN DỤNG – GIÁM SÁT SẢNH RẠP PHIM (SUP)</h3>
+                        <p>Bạn đam mê điện ảnh, thường xuyên cập nhật tin tức bộ phim tại các rạp chiếu phim, luôn cập
+                           nhật xu hướng hay đơn giản muốn làm việc trong một môi trường nghệ thuật với những đồng
+                           nghiệp trẻ trung, năng động
+                           Cinestar tạo cơ hội làm việc trong môi trường năng động, chuyên nghiệp, mong muốn được cống
+                           hiến, phát triển bản thân và thăng tiến. </p>
+                     </div>
+                  </div>
+                  <div class="news__item bg-news-orange">
+                     <div class="news__img">
+                        <img src="img/news_10.jpg" alt="">
+                     </div>
+                     <div class="news__text">
+                        <h3>TRƯỞNG PHÒNG KINH DOANH </h3>
+                        <p>Cinestar Cinema - Hệ thống cụm rạp Việt Nam được đầu tư theo tiêu chuẩn chất lượng Âu Mỹ -
+                           đang tìm kiếm những ứng viên tài năng gia nhập vào công ty để không ngừng mở rộng và phát
+                           triển quy mô.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- CONTACT -->
+         <section class="contact">
+            <div class="contact__wrap">
+               <div class="contact__title">
+               </div>
+               <div class="contact__content">
+                  <div class="contact__item">
+                     <h3>LIÊN KẾT</h3>
+                     <div class="social_icons">
+                        <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="youtube"><i class="fab fa-youtube"></i></a>
+                     </div>
+                     <h3>HOTLINE</h3>
+                     <a href="#" class="hotline">028 7300 8881</a>
+                  </div>
+                  <div class="contact__item">
+                     <h3>HỆ THỐNG RẠP</h3>
+                     <ul>
+                        <li><a href="#">CineStar Quốc Thanh</a></li>
+                        <li><a href="#">CineStar Đà Lạt</a></li>
+                        <li><a href="#">CineStar Hai Bà Trưng</a></li>
+                        <li><a href="#">CineStar Bình Dương</a></li>
+                        <li><a href="#">CineStar Huế</a></li>
+                        <li><a href="#">Cinestar Mỹ Tho</a></li>
+                     </ul>
+                  </div>
+                  <div class="contact__item">
+                     <h3>CINESTAR</h3>
+                     <ul>
+                        <li><a href="#">Phim đang chiếu</a></li>
+                        <li><a href="#">Phim sắp chiếu</a></li>
+                        <li><a href="#">Suất chiếu đặc biệt</a></li>
+                        <li><a href="#">Lịch chiếu</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                     </ul>
+                  </div>
+                  <div class="contact__item">
+                     <h3>THÔNG TIN</h3>
+                     <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Hỏi và đáp</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                     </ul>
+                  </div>
+                  <div class="contact__item column-2">
+                     <h3>CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
+                     <ul>
+                        <li><a href="#">Quy định chung</a></li>
+                        <li><a href="#">Điều khoản giao dịch</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Thông tin công ty</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="contact__icons">
+                  <ul>
+                     <li>
+                        <a href="#">
+                           <img src="img/dolby2.png" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="img/crhistie.png" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="img/2d.jpg" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="img/3d.png" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="img/cinestar-coffee-02.png" alt="">
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+      </div>
+   </div>
+
+   <footer>
+      <div class="payment">
+         <h4>Chấp nhận thanh toán</h4>
+         <ul>
+            <li><a href="#"><img src="img/napas-40.png" alt=""></a></li>
+            <li><a href="#"><img src="img/payment-visa.png" alt=""></a></li>
+            <li><a href="#"><img src="img/payment-mastercard.png" alt=""></a></li>
+            <li><a href="#"><img src="img/momo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/zalopay.png" alt=""></a></li>
+         </ul>
+      </div>
+      <div class="copyright">
+         <a href="#"><img src="img/dathongbao.png" alt=""></a>
+         <p>CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM – RẠP CHIẾU PHIM NGÔI SAO<br>
+            Địa chỉ: 135 Hai Bà Trưng, phường Bến Nghé, Quận 1, TP.HCM<br>
+            Giấy CNĐKDN số: 0312742744, đăng ký lần đầu ngày 18/04/2014, đăng ký thay đổi lần thứ 2 ngày 15/09/2014, cấp
+            bởi Sở KH&amp;ĐT TP.HCM<br><br>
+            2015 © <strong>CINESTAR</strong>. All rights reserved.</p>
+      </div>
+   </footer>
+
+   <div class="backToTop"></div>
+
+   <!-- JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>

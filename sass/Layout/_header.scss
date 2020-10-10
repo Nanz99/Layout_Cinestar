@@ -1,0 +1,284 @@
+header {
+   position: relative;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 130px;
+   z-index: 20;
+   background: url(../../img/line-bg.png) repeat-x left top;
+   background-size: contain;
+   transition: all 0.3s ease-in-out;
+
+   .header__content {
+      position: relative;
+      top: 10px;
+      display: block;
+      width: 90%;
+      max-width: 1300px;
+      margin: 0 auto;
+      z-index: 99;
+
+      .logo {
+         position: absolute;
+         top: 2px;
+         left: -30px;
+         width: 220px;
+         height: 110px;
+         background: url(../../img/white-2018.png) no-repeat center center;
+         z-index: 100;
+         cursor: pointer;
+         background-size: contain;
+         transition: all 0.3s ease-in-out;
+      }
+
+      .facilities-nav {
+         text-align: right;
+         display: block;
+         margin: 0 0 14px 0;
+
+         .searchForm {
+            position: relative;
+            display: block;
+            width: 272px;
+            height: 42px;
+            margin-right: 16px;
+            background-color: $color-black-0;
+            border-radius: 30px;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+
+            .form-control {
+               input {
+                  display: block;
+                  border: none;
+                  background: none;
+                  width: 226px;
+                  height: 42px;
+                  padding: 0 5px 0 20px;
+                  font-size: 14px;
+                  line-height: 42px;
+                  color: #d1d1d1;
+                  border: none;
+                  opacity: 0.8;
+                  transition: all 0.3s ease-in-out;
+
+               }
+
+               .search {
+                  position: absolute;
+                  top: 0px;
+                  right: 0px;
+                  width: 46px;
+                  height: 42px;
+                  background: url(../../img/icon-search.png) no-repeat center center;
+
+                  transition: all 0.3s ease-in-out;
+                  -webkit-transition: all 0.3s ease-in-out;
+                  opacity: 1;
+               }
+            }
+
+
+         }
+
+         .language {
+            display: inline-block;
+            vertical-align: middle;
+            width: 39px;
+            height: 39px;
+            line-height: 29px;
+            border-radius: 50%;
+            background-color: $color-pink-0;
+            font-size: 14px;
+            color: $color-white-0;
+            text-align: center;
+            line-height: 39px;
+            text-shadow: 2px 4px 0 rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            opacity: 1;
+         }
+      }
+
+      .navigation {
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+
+         .icon-home {
+            display: inline-block;
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            background: url(../../img/icon-home.png) no-repeat center 5px;
+            text-indent: 9999px;
+            overflow: hidden;
+            margin-right: 12px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            margin-top: -5px;
+         }
+
+         nav {
+            position: relative;
+            padding: 3px;
+            border: 1px solid$color-pink-1;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            display: inline-block;
+            vertical-align: middle;
+
+            ul {
+               position: relative;
+               background-color: $color-pink-1;
+               border-radius: 30px;
+               overflow: hidden;
+               padding: 1px;
+               display: flex;
+               align-items: center;
+
+               li {
+
+                  // display: inline;
+                  a {
+                     font-weight: 700;
+                     padding: 10px 15px;
+                     font-size: 16px;
+                     text-transform: uppercase;
+                     text-align: center;
+                     color: $color-white-0;
+                     height: 42px;
+                     line-height: 42px;
+                     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+                     &:hover {
+                        background-color: $color-yellow-0;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+   }
+}
+
+.btn-bars {
+   background: url(../../img/nav-click.png) no-repeat center top;
+   width: 60px;
+   height: 48px;
+   right: 70px;
+   top: 24px;
+   position: fixed;
+   cursor: pointer;
+   display: none;
+   opacity: 0;
+   z-index: 600;
+   transition: all 0.3s ease 0s;
+}
+
+//reponsive
+@media screen and (max-width:1300px) {
+   header {
+      height: 94px;
+
+      .header__content {
+
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         .logo {
+
+            top: -23px;
+            transform: scale(0.6);
+         }
+
+         .btn-bars {
+            display: block;
+            opacity: 1;
+         }
+
+         .facilities-nav {
+            .searchForm {
+               display: none;
+               position: absolute;
+               top: 100px;
+               right: 0;
+               z-index: 102;
+               width: 240px;
+
+            }
+
+            .language {
+               position: absolute;
+               top: 16px;
+               right: 25px;
+            }
+         }
+
+         .navigation {
+            transform: translateX(-100%);
+            transition: all 0.3s ease-in-out;
+            padding-top: 60px;
+            display: none;
+            position: absolute;
+            top: 90px;
+            right: 0;
+            z-index: 101;
+            height: auto;
+            border: 1px solid #dddddd;
+
+            .icon-home {
+               display: none;
+            }
+
+            nav {
+               display: inline;
+               border-radius: 0px;
+               border: 0;
+
+               ul {
+                  border-radius: 0;
+                  width: 260px;
+                  text-align: center;
+                  background-color: #fff;
+                  display: inline-block;
+
+                  li {
+                     display: block;
+                     border-top: 1px solid black;
+
+                     a {
+                        color:$color-pink-1;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .header__content.active {
+
+         position: absolute;
+         width: 100%;
+         height: 100vh;
+         display: block;
+         background-color: rgba(0, 0, 0, 0.5);
+         z-index: 100;
+
+         .facilities-nav {
+            .searchForm {
+               display: block;
+            }
+
+         }
+
+         .navigation {
+            display: block;
+            transform: translateX(0);
+         }
+      }
+   }
+}

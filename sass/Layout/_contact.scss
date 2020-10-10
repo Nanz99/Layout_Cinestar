@@ -1,0 +1,91 @@
+.contact {
+   position: relative;
+   width: 100%;
+   min-height: 480px;
+   padding-top: 46px;
+   background: url(../../img/line-bg.png) repeat-x left top;
+   background-size: contain;
+   .contact__wrap {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1200px;
+      overflow: hidden;
+      margin-bottom: 45px;
+      text-align: center;
+
+      .contact__title {
+         display: inline-block;
+         vertical-align: top;
+         width: 183px;
+         height: 92px;
+         background-image: url(../../img/white-2018.png);
+         cursor: pointer;
+         background-size: contain;
+         background-position: center center;
+         background-repeat: no-repeat;
+         margin-bottom: 46px;
+      }
+
+      .contact__content {
+         display: grid;
+         grid-template-columns: repeat(6,1fr);
+
+         .contact__item {
+            a.facebook{
+               height: 42px;
+               width: 42px;
+               line-height: 42px;
+               background-color: blue;
+               color: $color-white-0;
+               display: inline-block;
+               margin: 0 5px;
+            }
+            a.youtube{
+               height: 42px;
+               width: 42px;
+               line-height: 42px;
+               background-color: red;
+               color: $color-white-0;
+               display: inline-block;
+               margin: 0 5px;
+            }
+            h3 {
+               display: inline-block;
+               @include styleText($color-white-0, $fs-2 + 1, $fw-normal);
+               padding: 8px 16px;
+               background-color: rgba(255, 255, 255, 0.1);
+               margin-top: 20px;
+               margin-bottom: 20px;
+            }
+            a.hotline{
+               display: block;
+               @include styleText($color-white-0,$fs-2,$fw-normal);
+            }
+            ul{
+               li{
+                  margin-bottom: 15px;
+                  a{
+                     @include styleText(#b3c4d5,$fs-1+ 2,$fw-normal);
+                  }
+               }
+            }
+         }
+         .column-2{
+            grid-column: 5 / span 2;
+         }
+      }
+      .contact__icons{
+         ul{
+            li{
+               opacity: 1;
+               display: inline;
+               margin: 0 10px;
+               &:hover{
+                  opacity: 0.5;
+               }
+            }
+         }
+      }
+   }
+}
