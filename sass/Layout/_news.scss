@@ -65,7 +65,7 @@
             }
 
             .news__text {
-               max-height: 130px;
+               max-height: 135px;
                overflow: hidden;
                text-align: right;
 
@@ -74,6 +74,7 @@
                   font-size: 15px;
                   font-weight: bold;
                   margin-bottom: 10px;
+                  line-height: 1.3;
                }
 
                p {

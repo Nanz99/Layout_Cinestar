@@ -1,0 +1,23 @@
+.movie-detail-container{
+   .movie-detail__wrap{
+      width: 70%;
+      margin:  0  auto;
+      padding: 50px 0;
+      .movie-detail__content{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         .movie-detail__img{
+            height: 350px;
+            width: 250px;
+            img{
+               width: 100%;
+               display: block;
+            }
+         }
+         .movie-detail__text{
+            
+         }
+      }
+   }
+}
